@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    min-width: 250px;
+    padding: 0 300px;
+    background-color: #24252a;
+    font-family: Lora;
+  }
+
+:placeholder-shown{
+
+    font-family: Lora;
+}
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+    border: 2px solid #e4f1fe;
+  }
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #34495e;
+    font-size: 18px;
+    transition: 0.2s;
+    color: #e4f1fe;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #22313f;
+  }
+  /* ul li:last-child {
+    border-bottom: 3px solid #22313f;
+  } */
+  ul li.checked {
+    background: #22313f;
+    color: #e4f1fe;
+    text-decoration: line-through;
+  }
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #e4f1fe;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #24252a;
+    color: #e4f1fe;
+  }
+  .header {
+    background-color: #24252a;
+    padding: 30px 40px;
+    color: #e4f1fe;
+    text-align: center;
+    /* border-bottom: 2px solid #e4f1fe; */
+  }
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  input {
+    margin: 10px 0 0 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  #date{
+    text-align: left;
+    font-size: 18px;
+    font-family: Lora;
+  }
+  .add {
+    margin: 10px 0 0 0;
+    padding: 8px;
+    width: 25%;
+    background: #34495e;
+    color: #e4f1fe;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .add:hover {
+    background-color: #22313f;
+  }
